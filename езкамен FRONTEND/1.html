@@ -119,10 +119,34 @@
   </div>
   <div class="container2">
       <h1>Register to our Newsletter!</h1>
-      <form>
-        <input type="email" placeholder="Type your email here...">
-        <button type="submit">Submit</button>
-      </form>
+      <form id="emailForm">
+        <input type="email" id="emailInput" placeholder="Type your email here...">
+          <button type="submit">Submit</button>
+        </form>
+        
+        <script>
+          // Отримуємо елемент форми та інпута
+          const form = document.getElementById('emailForm');
+          const emailInput = document.getElementById('emailInput');
+        
+          // Додаємо обробник події надсилання форми
+          form.addEventListener('submit', function(event) {
+            // Відміняємо стандартну поведінку надсилання форми
+            event.preventDefault();
+        
+            // Отримуємо значення інпута
+            const emailValue = emailInput.value.trim();
+        
+            // Проведення валідації
+            if (emailValue === '') {
+              alert('Будь ласка, введіть свій email!');
+              return;
+            }
+        
+            // Якщо валідність пройдена, виводимо значення в консоль
+            console.log('Введений email:', emailValue);
+          });
+        </script>
       <div class="image4">
         <a href="#"> <img src="image/image4.jpg" alt="" /></a>
     </div> 
