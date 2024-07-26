@@ -152,9 +152,7 @@ nav li:last-child {
 }
 
 .image1 {
-  max-width: 100%;
   height: auto;
-  max-width: 1440px; 
   margin: 0 auto;
 }
 /* .image1 img {
@@ -164,13 +162,11 @@ nav li:last-child {
 
 .image3 {
   height: auto;
-  max-width: 1440px; 
   margin: 0 auto;
 }
 
 .image5 {
   height: auto;
-  max-width: 1440px; 
   margin: 0 auto;
 }
 
@@ -304,7 +300,6 @@ h1 {
   width: 40%;
   padding: 20px;
   flex-direction: column;
-  max-width: 767px;
 }
 
 .image img {
@@ -358,7 +353,6 @@ h1 {
   width: 40%;
   padding: 20px;
   flex-direction: column;
-  max-width: 767px;
 }
 
 .image img {
@@ -436,7 +430,6 @@ button[type="submit"]:hover {
 }
 
 .faq-container {
-  max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   background-color: #f9f9f9;
